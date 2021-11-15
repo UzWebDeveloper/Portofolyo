@@ -1,0 +1,55 @@
+.Aside {
+  .continer {
+    .sideBox {
+      .title {
+        text-align: right;
+        h2 {
+          font-size: 25px;
+          margin-right: 10px;
+          margin-top: 15px;
+        }
+      }
+      height: 98vh;
+      margin: 2%;
+      border-radius: 15px;
+      overflow-x: hidden;
+      background: linear-gradient(#c1c1c120, #c1c1c100, #c1c1c100);
+      backdrop-filter: blur(5px);
+      .Cards {
+        padding: 0 7px;
+        .NewsCard {
+          width: 100%;
+          
+          margin: 20px 0;
+          border: 1px solid #c1c1c142;
+          padding: 6px;
+          border-radius: 10px;
+          transition: 0.5s;
+          &:hover {
+            color: #0d81ec;
+            background-color: #d9d9e31a;
+          }
+          p {
+            margin: 0 0 07px;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+      .MoreBtn {
+        text-align: center;
+        .btn {
+          margin: 0 0 5px 0;
+          height: 5vh;
+          display: block;
+          color: #d9d9e3;
+          text-decoration: none;
+          padding: 3% 50px;
+          background-color: #0d81ec;
+          border-radius: 0 0 15px 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.resumeBox {
+  .continer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    overflow-x: hidden;
+    button {
+      position: fixed;
+      right: 0;
+      top: 0;
+      margin: 20px 20px 0 0;
+      background: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    .Box {
+      display: flex;
+      justify-content: center;
+      .resume {
+        width: 70vw;
+        background-color: #00000070;
+        margin: 100px 0;
+        padding: 30px 50px;
+        border-radius: 20px;
+
+        position: relative;
+        animation-name: fromBottom;
+        animation-duration: .5s ;
+
+        .boxTop {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          .topLeft {
+            padding: 50px 0 0 40px;
+            h2 {
+              font-size: 40px;
+              letter-spacing: 2px;
+            }
+            p {
+              margin: 6px 0;
+              .num {
+                font-size: 22px;
+              }
+            }
+          }
+          .topRight {
+            padding: 15px 50px 0 0;
+            img {
+              width: 260px;
+              border-radius: 30px;
+            }
+          }
+        }
+
+        .boxBottom {
+          margin: 50px 0 0 0;
+          h2 {
+            margin: 10px 0;
+          }
+          p {
+            margin: 15px 50px 15px 0;
+            text-align: justify;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes fromBottom {
+  0%{
+    bottom: -200px;
+    opacity: 0;
+  }
+  100%{
+    bottom: 0;
+    opacity: 1;
+  }
+  
+}

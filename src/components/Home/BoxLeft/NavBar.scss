@@ -1,0 +1,42 @@
+.Nav{
+
+  .continer{
+    padding: 0 12px;
+    width: 100%;
+    height: 100vh;
+    border-right: 1px solid #c1c1c1;
+    backdrop-filter: blur(5px);
+    .LogoBox{
+      .Logo{
+        width: 60px;
+        font-size: 20px;
+        // padding: 10px 0 0 0 ;
+        color: #fff;
+        p{
+          
+        }
+      }
+    }
+    .menuBox{  
+      width: 70px;
+      ul{
+        // margin: 100% 0 0 0 ; 
+        position: absolute;
+        top: 20%;       
+        padding: 0 17px;
+        
+        .Link{
+          text-decoration: none;
+          color: #fff;
+
+          li{
+            list-style: none;
+            text-align: center;
+            margin: 30px 0;     
+               
+          }
+        }
+      }
+    }
+  }
+}

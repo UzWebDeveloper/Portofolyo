@@ -1,0 +1,11 @@
+.AppCursor{
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(0, 0,0);      
+  pointer-events: none;
+  overflow: hidden;
+  background: url(../Images/cursor.svg);
+}
