@@ -19,7 +19,7 @@ export default function Home() {
               <Header />            
             </div>
             <div className="boxCenter__bottom">
-              <Section/>
+              <Section token={process.env.REACT_APP_INS_TOKEN} limit={7} />
             </div>
           </div>
 

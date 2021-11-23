@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss"
 import Resume from "../../Pages/Resume"
-import User from "../../../assets/Images/User.jpg"
+// import User from "../../../assets/Images/User.jpg"
 
 
 

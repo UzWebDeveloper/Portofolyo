@@ -9,16 +9,19 @@
     backdrop-filter: blur(10px);
     z-index: 1000;
     overflow-x: hidden;
-    button {
-      position: fixed;
+    .closeBtn {
+      position: absolute;
       right: 0;
       top: 0;
-      margin: 20px 20px 0 0;
-      background: none;
-      outline: none;
-      border: none;
-      cursor: pointer;
+      button {
+        margin: 20px 20px 0 0;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
     }
+
     .Box {
       display: flex;
       justify-content: center;
@@ -31,7 +34,7 @@
 
         position: relative;
         animation-name: fromBottom;
-        animation-duration: .5s ;
+        animation-duration: 0.5s;
 
         .boxTop {
           display: flex;
@@ -75,15 +78,13 @@
   }
 }
 
-
 @keyframes fromBottom {
-  0%{
+  0% {
     bottom: -200px;
     opacity: 0;
   }
-  100%{
+  100% {
     bottom: 0;
     opacity: 1;
   }
-  
 }

@@ -3,6 +3,14 @@
   .continer {
     display: flex;
     justify-content: space-between;
+    .animate1 {
+      position: relative;
+      animation: fromLeft 1s;
+    }
+    .animate2 {
+      position: relative;
+      animation: fromRight 1s;
+    }
     .box {
       width: 49%;
       height: 45vh;
@@ -10,10 +18,44 @@
       background-color: #ffffff20;
       backdrop-filter: blur(5px);
       overflow: hidden;
+
+      .boxContiner {
+        display: flex;
+        justify-content: center;
+        .imgBox {
+          padding: 18px 0;
+          display: flex;
+
+          .img {
+            width: 250px;
+            height: 250px;            
+            border-radius: 10px;
+            overflow: hidden;
+            &:hover{
+              p{
+                top: 225px;
+              }
+            }
+            p{
+              text-align: center;
+              width: 140px;
+              padding: 2px;
+              position: relative;
+              top: 250px;
+              left: 60px;
+              // display: none;
+              transition: .5s;
+              background-color: #0D1117;
+              border-radius: 5px;
+              
+            }
+          }
+        }
+      }
+
       .loaderBox {
         display: flex;
         justify-content: center;
-        
       }
 
       .loader {
@@ -45,5 +87,27 @@
         }
       }
     }
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    right: -200px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    left: -200px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
   }
 }

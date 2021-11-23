@@ -8,9 +8,11 @@ export default function Resume({ closeModal }) {
     <div>
       <div className="resumeBox">
         <div className="continer"  >
+          <div className="closeBtn">
           <button onClick={() => closeModal(false)}>
             <AiOutlineCloseCircle size="30px" color="#fff" />
           </button>
+          </div>
           <div className="Box">
             <div className="resume">
 
